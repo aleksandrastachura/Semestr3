@@ -1,0 +1,14 @@
+.page-footer {
+    padding: 30px 0;
+    font-size: 12px;
+    color: $color-neutral--darker;
+    &__nav {
+        a {
+            margin-right: 10px;
+            color: $color-neutral--darker; 
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
