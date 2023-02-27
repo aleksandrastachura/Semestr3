@@ -1,0 +1,50 @@
+.post {
+    margin-bottom: 20px;
+    background-color: $color-white;
+    @include border(1px, solid, $color-neutral--dark);
+    border-radius: 7px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+    }
+    &__details {
+        padding: 15px;
+    }
+    &__actions {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        &-item {
+            margin-right: 20px;
+            img {
+                display: block;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &__comments-comment {
+            a {
+                color: $color-neutral--darker;
+            }
+        
+    }
+    &__footer {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        border-top: 1px solid $color-neutral;
+    }
+    &--loader {
+        padding: 15px;
+        text-align: center;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}

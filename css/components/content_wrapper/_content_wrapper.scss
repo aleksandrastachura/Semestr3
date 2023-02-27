@@ -1,0 +1,26 @@
+.content-wrapper {
+    @media screen and (min-width: 800px) {
+        display: flex;
+        margin: 0 -15px;
+    } 
+    &__aside {
+        display: none;
+        @media screen and (min-width: 800px) {
+            padding: 0 15px;
+            display: block;
+            flex: 1;
+            &-user {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    &__main {
+        @media screen and (min-width: 800px) {
+        padding: 0 15px;
+        width: 70%;
+        }
+    }
+}
